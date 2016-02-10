@@ -1,0 +1,10 @@
+.profile{
+  width: 500px;
+  background-color: #F5D0A9;
+  padding: 20px 40px;
+}
+
+h1,
+.photo{
+  text-align: center;
+}
