@@ -12,3 +12,10 @@ h1,
 .photo{
   text-align: center;
 }
+ img{
+   height: 215px;
+   width: 228px;
+ }
+ p{
+   white-space: pre;
+ }
