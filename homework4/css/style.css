@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Tahoma;
+    src: url(C:/Windows/Fonts/tahoma.ttf);
+   }
+
+body{
+  font-family: Tahoma;
+  text-align: center;
+  background-image: url('../img/back.png') ;
+  }
+
+.main{
+  margin: 0 auto;
+  width: 1000px;
+  background-color: white;
+  box-shadow: 0 0 3px 2px black;
+  color: black;
+  overflow: hidden;
+}
+
+/*--Верх сайта--*/
+
+header{
+  position: relative;
+  height: 416px;
+  color: #128aa7;
+}
+
+.logo{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 283px;
+  height: 164px;
+}
+
+.logo_text{
+  position: absolute;
+  top: 110px;
+  left: 75px;
+  font-size: 12px;
+}
+
+.contacts{
+  position: absolute;
+  right: 20px;
+  white-space: pre-wrap;
+  font-size: 12px;
+  text-align: left;
+}
+
+.countries{
+  position: absolute;
+  right: 30px;
+  top: 110px;
+}
+
+.countries li{
+  display: block;
+  float: left;
+  font-size: 10px;
+  text-align: center;
+  padding-right: 10px;
+}
+.photo{
+  position: relative;
+  top: 177px;
+  border-top: 1px solid #128aa7;
+  border-bottom: 1px solid #128aa7;
+}
+
+/*-- Навигация --*/
+
+.main_nav {
+  margin: 2px 0px;
+  width: 1000px;
+  background-color: #323232;
+  border-bottom: 2px solid black;
+  box-shadow: 0 6px 4px -2px black;
+  z-index: 1;
+}
+
+.main_nav > li {
+  display: inline-block;
+  margin-right: -2px;
+  position: relative;
+}
+
+.main_nav a {
+  display: block;
+  color: white;
+  font-size: 14px;
+  background-color: #323232;
+  text-decoration: none;
+}
+
+.main_nav >li> a{
+  padding: 8px 65px 8px 0px;
+}
+
+.main_nav > li:last-child >a{
+  padding-right: 0px;
+}
+
+.main_nav a:hover {
+  background-color: #323232;
+}
+
+.main_nav .sub_nav {
+  position: absolute;
+  left: 1px;
+  width: 150px;
+  list-style: none;
+  background: #323232;
+  border-top: 2px solid black;
+  box-shadow: 0 6px 4px -2px black;
+  display: none;
+  z-index: 1;
+  text-align: left;
+}
+
+.main_nav .sub_nav a {
+  padding: 5px 5px;
+}
+
+.main_nav > li:hover .sub_nav {
+  display: block;
+}
+
+/*Деление на блоки*/
+
+.fon1,
+.fon2,
+.fon3 {
+  width: 100%;
+  float: left;
+}
+
+.fon1 {
+  position: relative;
+  right: 50%;
+  background: #edeef0;
+}
+
+.fon2 {
+  background: white;
+  position: relative;
+  right: 25%;
+}
+
+.fon3 {
+  background: #edeef0;
+}
+
+.leftColumn,
+.centerColumn,
+.rightColumn{
+  overflow: hidden;
+  position:relative;
+  line-height: 1.4;
+}
+
+.leftColumn {
+  width: 20%;
+  float: left;
+  left:77.5%;
+}
+.centerColumn {
+  width: 45%;
+  float: left;
+  left:81.5%;
+}
+.rightColumn {
+  width: 20%;
+  float: right;
+  left:72.5%;
+}
+
+h1{
+  font-size: 18px;
+}
+
+.copy{
+  font-size: 12px;
+  color: white;
+  padding: 10px 0;
+}
