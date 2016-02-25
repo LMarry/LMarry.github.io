@@ -1,0 +1,47 @@
+/*table{
+width: 1000px;
+height: 1000px;
+}*/
+
+td{
+  border: 5px solid black;
+  width:30px;
+  height: 30px;
+}
+
+
+td:first-child,
+tr:nth-child(1) td{
+  visibility: hidden;
+}
+
+td:last-child{
+  border-right:5px solid white;
+}
+
+td:first-child{
+  border-right:5px solid white;
+}
+tr:first-child td{
+  border-bottom:5px solid white;
+}
+
+.no_bot_bord{
+  border-bottom: 5px solid white;
+}
+
+.red{
+  background-color: red;
+}
+
+.black{
+  background-color: black;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.blue{
+  background-color: blue;
+}
