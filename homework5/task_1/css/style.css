@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Tahoma, sans-serif;
+}
+
+/*Стилизация навигационного меню*/
+.nav_menu{
+  margin: 0 auto;
+  width: 1215px;
+  height: 40px;
+  background: url('../img/noise.png') repeat;
+}
+
+.nav_menu li{
+  display: block;
+  float:right;
+  vertical-align: middle;
+  color: #60b5ed;
+  vertical-align: middle;
+}
+
+.nav_menu a{
+  display: inline-block;
+  color: #60b5ed;
+  padding:13px;
+  text-decoration: none;
+}
+/*Центрирование флага*/
+.flag{
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 13px;
+  border-left: 1px solid #56a2dc;
+}
+
+/*Стилизация последних двух пунктов*/
+.nav_menu li:first-child{
+  background: linear-gradient(to bottom, #50afdc, #2e7ac4);
+  color:white;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-right: 20px;
+}
+
+.nav_menu li:first-child a{
+  color:white;
+  text-decoration: underline;
+  padding: 13px 0px;
+}
+.nav_menu li:nth-child(2) a{
+  color:white;
+}
+
+/*Действия при наведении на пункт меню*/
+.nav_menu li:hover {
+  background-color: #4eabda;
+  color:white;
+}
+.nav_menu li:hover >a{
+  color:white;
+  font-weight: bold;
+}
+.back{
+  position: relative;
+}
+
+/*Стилизация формы входа*/
+.enter_form{
+  z-index: 1;
+  position:absolute;
+  left:50%;
+  margin-left:-280px;
+  top:50%;
+  margin-top:-307px;
+  width: 560px;
+  height: 620px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+h1{
+  font-size: 24px;
+  padding: 20px;
+  border-bottom: 3px solid #c0c6b8;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.line{
+  padding: 0px;
+  background-color: #666666;
+  height: 1px;
+  width: 125px;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ou{
+  color: #818381;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 260px;
+  color: #adaca9;
+  background-color: #101010;
+  border: none;
+  border-bottom: 1px solid #484947;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+  color: white;
+  background-color: #1b5288;
+  box-shadow: 0 0 3px 2px #699ccd;
+}
+
+input[type="checkbox"]{
+  margin-left: -50px;
+}
+
+input[type="submit"]{
+  padding: 10px;
+  width: 150px;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, #67c6e6, #2e7ac4);
+  border-radius: 5px;
+  border: none;
+  margin: 20px;
+}
+
+input[type="submit"]:active{
+  box-shadow: 2px 3px 2px -1px #464646 inset, 0 1px 1px 0 #666666;
+}
+
+input[type="submit"],
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+.agreement{
+  width: 315px;
+  color: #adaca9;
+  text-align: center;
+  margin-left: 120px;
+}
