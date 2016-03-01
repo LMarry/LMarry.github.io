@@ -74,6 +74,10 @@ body{
 }
 .back{
   position: relative;
+  background-image: url('../img/background.png');
+  width: 1215px;
+  height: 1028px;
+  margin: 0 auto;
 }
 
 /*Стилизация формы входа*/
