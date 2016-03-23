@@ -71,6 +71,7 @@
     }
     .feature--subtitle {
         display: inline-block;
+        font-size: 28px;
     }
     
     .feature--text {
@@ -93,7 +94,6 @@
     .update--link {
         margin-top: 22px;
         margin-bottom: 91px;
-        font-size: 15px;
     }
     .feature__article {
         margin-left: -20px;

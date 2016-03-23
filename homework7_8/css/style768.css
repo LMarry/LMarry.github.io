@@ -106,6 +106,7 @@
     .feature--subtitle {
         display: none;
         display: block;
+        font-size: 28px;
     }
     .feature__switch {
         margin-top: 27px;
