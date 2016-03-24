@@ -142,7 +142,7 @@ header{
   box-shadow: 2px 2px 4px 0px #b4b4b4;
   border-radius: 3px;
   padding: 8px 0px;
-  margin-bottom: 162px;
+/*  margin-bottom: 162px;*/
   border: 1px solid #2c345a;
 }
 
@@ -205,6 +205,261 @@ header nav a:hover{
   letter-spacing: 0.7px;
 }
 
+/* --ГЛАВНАЯ ФОРМА ПОИСКА-- */
+
+.main_filters{
+  height: 136px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.search-form{
+  height: 134px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 17px;
+  border: 1px solid #9c9c9d;
+  box-shadow: 2px 4px 6px 0 rgba(104, 104, 104, 0.5);
+  float: left;
+  position: relative;
+}
+
+.search_auto{
+  width: 412px;
+  margin-left: 4px;
+}
+.search_tire{
+  width: 190px;
+  margin-left: 15px;
+}
+.search_disc{
+  width: 266px;
+  margin-left: 11px;
+}
+
+
+.search-form h1{
+  font-size: 12px;
+  font-family: "Arial Black";
+  letter-spacing: 0.025em;
+  text-align: center;
+  color: #114165;
+  margin: 2px 0 0 -5px;
+}
+
+.disc-title{
+  font-size: 10px;
+  font-family: "Arial Black";
+  letter-spacing: 0.025em;
+  text-align: center;
+  color: #114165;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+.tire-title{
+  font-size: 10px;
+  font-family: "Arial Black";
+  letter-spacing: 0.025em;
+  text-align: center;
+  color: #114165;
+  position: absolute;
+  top: 3px;
+  right: 20px;
+}
+
+select{
+  -webkit-appearance: none;
+  background-image: url('../img//select.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: 0;
+  box-shadow: inset 2px 2px 1px 0 rgba(0, 0, 0, .35);
+  height: 17px;
+  font-size: 11px;
+  line-height: 1em;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-appearance: none;
+}
+
+.brand_auto, .model_auto, .options_auto{
+  width: 102px;
+}
+
+.year_auto{
+  margin-right: 44px;
+  width: 58px;
+}
+
+.search-form .select-title{
+  width: 77px;
+  font-size: 10px;
+  font-family: "Arial";
+  color: #000;
+  float: left;
+  margin: auto 0;
+}
+
+.search_tire label span:last-child{
+  font-family: "LucidaSansUnicode", sans-serif;
+  font-size: 12px;
+}
+
+.search-form .select-subtitle{
+  font-size: 9px;
+  font-family: "Arial";
+  color: #77858b;
+}
+
+.select-group{
+  width: 180px;
+  margin: 7px 0 0 18px;
+  float: left;
+}
+
+.search-form label{
+  display: flex;
+  line-height: 8px;
+  margin-bottom: 5px;
+}
+
+label select{
+  float: right;
+}
+
+.tire-group{
+  margin: 5px 0 0 25px;
+}
+
+.search-form button[type='submit']{
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  border: 0;
+  background: transparent;
+  font-style: italic;
+  text-decoration: underline;
+  color: #154467;
+  margin-right: 13px;
+  position: absolute;
+  right: 0;
+  bottom: 9px;
+}
+
+.search-form button[type='submit']:hover{
+  font-weight: bold;
+}
+
+.search-form .search_tire-title{
+  text-align: left;
+  margin-left: 9px;
+}
+
+.search_tire label{
+  margin: 8px 0 0 13px;
+  float: left;
+}
+
+.search_tire .select-title{
+  width: auto;
+}
+
+.search-form label[for="tire_size1"] span{
+  margin-top: 9px;
+}
+
+.search-form label[for="summer"] span:first-child{
+  margin: 3px 6px 0 -6px;
+}
+
+.search_tire label select{
+  width: 52px;
+  margin-left: 6px;
+}
+
+.search_tire label[for='tire_size2']{
+  margin-left: 0;
+}
+
+.search_tire label[for='tire_radius']{
+  margin-left: 46px;
+}
+
+.search_tire .tire_radius{
+  width: 45px;
+}
+
+.search_tire .checkbox{
+  width: 150px;
+  margin: 3px 0 -8px 21px;
+}
+
+.search_tire .checkbox input{
+  margin-right: 1px;
+}
+
+.search_tire .checkbox:not([for="summer"]){
+  margin-left: 54px;
+}
+
+.search_disc .select-group{
+  margin-left: 15px;
+  width: 153px;
+}
+
+.search_disc .select-group select{
+  margin-left: 14px;
+  width: 57px;
+}
+
+.search_disc .select-group label{
+  margin-bottom: 14px;
+}
+
+.search_disc .select-group label span{
+  font-family: "LucidaSansUnicode", sans-serif;
+}
+
+.search_disc .select-group label select[id="disc-amount-of-mounts"]{
+  width: 51px;
+  margin-left: 14px;
+}
+
+.search_disc .select-group label[for="disc-amount-of-mounts"] span{
+  margin-top: -10px;
+}
+
+.search_disc .select-group label[for="disc-diameter-of-mounts"] span{
+  line-height: 9px;
+  margin-top: -12px;
+}
+
+.search-form .col-2{
+  width: 55px;
+  margin: -8px 0 0 7px;
+  padding-left: 10px;
+  border-left: 1px solid silver;
+}
+
+.search-form .col-2 .select-title{
+  margin-bottom: 5px;
+}
+
+.search-form .col-2 .select-subtitle{
+  width: 80px;
+  display: inline-block;
+}
+
+.search-form .col-2 select{
+  width: 58px;
+  margin-left: 0;
+  float: none;
+}
+
+.search_disc .col-2 label{
+  margin-bottom: 6px;
+  display: block;
+}
 /*--РАЗДЕЛЕНИЕ НА ТРИ ЧАСТИ--*/
 
 main {
@@ -221,6 +476,7 @@ aside {
 }
 
 article {
+/*margin-top: 162px;*/
   height: 613px;
   margin-left: 192px;
   margin-right: 192px;
