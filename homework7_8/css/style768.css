@@ -7,7 +7,7 @@
         text-align: left;
         padding-left: 20px;
     }
-    
+
     .slider {
         margin-top: 77px;
     }
@@ -75,7 +75,7 @@
         width: 27%;
         padding-right: 0px;
     }
-    
+
     .post__article:nth-child(2){
         margin: 0 5.4%;
     }
@@ -95,14 +95,14 @@
         padding-left: 46px;
         padding-right: 40px;
     }
-    
+
     .feature--title {
         margin-bottom: 3px;
     }
     .feature--text {
         height: 150px;
     }
-    
+
     .feature--subtitle {
         display: none;
         display: block;
@@ -112,7 +112,7 @@
         margin-top: 27px;
         margin-left: 30px;
     }
-    
+
     .update {
         width: 49.9%;
         padding-top: 128px;
@@ -162,6 +162,6 @@
         padding-right: 20px;
         width: auto;
     }
-    
+
 
 }
