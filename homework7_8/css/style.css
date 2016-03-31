@@ -273,8 +273,8 @@ main {
     padding-top: 70px;
     border-top: 1px solid #33253a;
     border-bottom: 1px solid #fff;
-    background: #765283;
-    background-image: linear-gradient(to bottom, #765283, #37293e);
+    /*background: #765283;*/
+    background-image: -webkit-linear-gradient(to bottom, #765283, #37293e);
     height: 600px;
     box-shadow: 0 9px 20px -4px rgba(0, 0, 0, 0.3);
 }
