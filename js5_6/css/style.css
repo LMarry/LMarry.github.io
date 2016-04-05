@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.buttons {
+    position: relative;
+    float: left;
+    width: 25%;
+    background-color: azure;
+    height: 100%;
+}
+
+.timer {
+    position: relative;
+    float: left;
+    width: 50%;
+    background-color: #dfffff;
+    height: 100%;
+}
+
+.stop_split {
+    float: left;
+    width: 25%;
+    background-color: azure;
+    height: 100%;
+}
+
+.btn {
+    margin-bottom: 40px;
+}
+
+.btn:last-child{
+    margin-bottom: 0;
+}
+
+.btns {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.time {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.timer_span {
+    font-family: sans-serif;
+    font-size: 100px;
+    color: forestgreen;
+}
+
+.split_stop_span{
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: forestgreen;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

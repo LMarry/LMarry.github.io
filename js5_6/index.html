@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="buttons">
+       <div class="btns">
+        <button type="button" class="btn btn-success btn-block btn-lg" id="start_btn">Start</button>
+        <button type="button" class="btn btn-success btn-block btn-lg" id="split_btn">Split</button>
+        <button type="button" class="btn btn-success btn-block btn-lg" id="reset_btn">Reset</button>
+        </div>
+    </div>
+    <div class="timer">
+       <div class="time">
+        <span class="timer_span" id="hours">00</span>
+        <span class="timer_span">:</span>
+        <span class="timer_span" id="minutes">00</span>
+        <span class="timer_span">:</span>
+        <span class="timer_span" id="seconds">00</span>
+        <span class="timer_span">.</span>
+        <span class="timer_span" id="mil_seconds">000</span>
+        </div>
+    </div>
+    <div class="stop_split" id="stop_split"></div>
+    <script type="text/javascript" src="js/timer.js">
+    </script>
+</body>
+
+</html>
