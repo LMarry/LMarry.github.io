@@ -32,6 +32,7 @@ body {
 
 .btn {
     margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .btn:last-child{
