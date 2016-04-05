@@ -12,14 +12,14 @@
 
 <body>
     <div class="buttons">
-       <div class="btns">
+       <div class="inner">
         <button type="button" class="btn btn-success btn-block btn-lg" id="start_btn">Start</button>
         <button type="button" class="btn btn-success btn-block btn-lg" id="split_btn">Split</button>
         <button type="button" class="btn btn-success btn-block btn-lg" id="reset_btn">Reset</button>
         </div>
     </div>
     <div class="timer">
-       <div class="time">
+       <div class="inner">
         <span class="timer_span" id="hours">00</span>
         <span class="timer_span">:</span>
         <span class="timer_span" id="minutes">00</span>
@@ -29,7 +29,9 @@
         <span class="timer_span" id="mil_seconds">000</span>
         </div>
     </div>
-    <div class="stop_split" id="stop_split"></div>
+    <div class="stop_split" >
+        <div class="inner" id="stop_split"></div>
+    </div>
     <script type="text/javascript" src="js/timer.js">
     </script>
 </body>
