@@ -1,7 +1,7 @@
 var profile = _.template(document.getElementById('profile').innerHTML);
 var data = {
     name: 'Лобачёва Мария Олеговна'
-    , photo: 'img/photo.jpg'
+    , photo: 'img/photo.JPG'
     , activity: 'Студентка КНУ им. Т.Г. Шевченко.'
     , reasons: ['Нравится;', 'Присутствует доля творческой работы;']
     , telephone_number: '+380956488168'
