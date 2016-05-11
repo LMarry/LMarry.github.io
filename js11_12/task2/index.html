@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework11_12/task_2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+   <script type="text/template" id="profile">
+    <div class="profile">
+
+        <h1><%= name %></h1>
+        <div class="photo">
+            <p>
+                <img src= "<%= photo %>"  alt="Фото профиля">
+            </p>
+        </div>
+        <p><%=activity %></p>
+        <hr>
+        <p>Хочу учить Front end, потому что:</p>
+        <ul>
+        <% for (var i=0; i<reasons.length; i++){%>
+            <li><%= reasons[i] %></li>
+            <% } %>
+        </ul>
+        <hr>
+        <p>Мой контактный телефон: </p>
+        <p><%= telephone_number %></p>
+        <p>Мой профиль Вконтакте:</p>
+            <p><a href="<%= vk_profile %>"> <%= vk_profile %> </a></p>
+        <hr>
+        <p>Мой фидбек:</p> 
+        <p><%= feedback %></p>
+
+    </div>
+    </script>
+</body>
+
+</html>

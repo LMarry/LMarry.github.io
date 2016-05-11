@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework11_12/task_3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+
+</head>
+
+<body>
+   <script type="text/template" id="profile">
+    <div class="profile">
+
+        <h1><%= name %></h1>
+        <div class="photo">
+            <p>
+                <img src= "<%= photo %>"  alt="Фото профиля">
+            </p>
+        </div>
+        <p><%=activity %></p>
+        <hr>
+        <p>Хочу учить Front end, потому что:</p>
+        <ul>
+        <% for (var i=0; i<reasons.length; i++){%>
+            <li><%= reasons[i] %></li>
+            <% } %>
+        </ul>
+        <hr>
+        <p>Мой контактный телефон: 
+        <%= telephone_number %></p>
+        <p>Мой профиль Вконтакте:
+            <a href="<%= vk_profile %>"> <%= vk_profile %> </a></p>
+        <hr>
+        <p>Мой фидбек:
+        <%= feedback %></p>
+
+    </div>
+    </script>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
