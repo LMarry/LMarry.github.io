@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+    
+</head>
+
+<body>
+
+        <script type="text/template" id="quiz">        
+        <form class="quizForm" method="GET">
+            <h4 class="quizTitle">Тест жизненно необходимых знаний</h4>
+            <% for(i=0; i<data.length; i++){%>
+            <div class="questionBlock">
+                <h4 class="question q<%=i+1%>"><%=i+1%>. <%=data[i].question%></h4>
+                <% for(j=0; j<data[i].answer.length; j++){ %>
+                <input class="answerCheck" type="checkbox" name="ch<%=i%>" id="<%=i%>qAns<%=j%>">
+                <label class="answerLabel" for="<%=i%>qAns<%=j%>"> <%= data[i].answer[j]%> </label><br>
+                <%}%>
+            </div>
+            <%}%>
+            <button class="quizSubmit" form="quizForm" type="submit">Проверить мои результаты</button>
+        </form>
+</script>
+
+    <script type="text/javascript" src="js/quizFormTemplate.js"></script>
+
+</body>
+
+</html>
