@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #464660;
+}
+
+#title{
+    margin-top: 200px;
+}
+#whatSearch{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #464660;
+}
+#search{
+    background: white;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#result{
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.photo{
+    max-width: 150px;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 2px 2px #464660;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;    
+}
+.photo img{
+    width: 100%;
+}
