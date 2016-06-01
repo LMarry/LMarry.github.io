@@ -1,0 +1,135 @@
+.news-banners_background_grey {
+    background-color: #f7f7f7;
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+/*--  NEWS  --*/
+
+.news-banners {
+    @extend .wrap;
+    clear: both;
+}
+
+.news {
+    display: inline-block;
+    width: 570px;
+    margin-right: 25px;
+}
+
+.news-banners__title {
+    font-size: 24px;
+    color: #2a2d32;
+    margin-bottom: 45px;
+}
+
+.new {
+    margin-top: 30px;
+}
+
+.new__date {
+    display: inline-block;
+    margin-right: 22px;
+    position: relative;
+    div {
+        position: absolute;
+        top: 10px;
+        left: -15px;
+    }
+    p {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .new__month {
+        background-color: #248cec;
+        font-size: 15px;
+        color: #ffffff;
+    }
+    .new__day {
+        background-color: #f4b60d;
+        font-size: 18px;
+        color: #2a2b2e;
+    }
+}
+
+.new__info {
+    display: inline-block;
+    width: 393px;
+    font-size: 13px;
+    color: #9e9e9e;
+    a {
+        font-size: 16px;
+        color: #2a2d32;
+        margin-bottom: 8px;
+        text-decoration: none;
+    }
+    span {
+        color: #0187f4;
+    }
+    div {
+        margin-top: 25px;
+    }
+    a:hover {
+        color: #248cec;
+    }
+}
+
+
+/*--  END NEWS  --*/
+
+
+/*--  BANNERS  --*/
+
+.banners {
+    float: right;
+    display: inline-block;
+    width: 560px;
+    .news-banners__title {
+        margin-bottom: 45px;
+    }
+}
+
+.banner {
+    margin-bottom: 5px;
+    h3 {
+        display: inline-block;
+        width: 560px;
+        height: 40px;
+        border: 1px solid #e8e8e8;
+        background-color: #ffffff;
+        color: #2a2d32;
+        font-size: 13px;
+        line-height: 40px;
+    }
+    .banner__expand {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-right: 1px solid #e8e8e8;
+        cursor: pointer;
+        text-align: center;
+        margin-right: 15px;
+        font-size: 23px;
+    }
+    
+    .banner__info{
+        margin: 30px 0 40px 35px;
+        font-size: 13px;
+        color: #8a8a8a;
+    }
+}
+
+.banner_hover{
+    h3 {
+        color: #ffffff;
+        border: none;
+        background-color: #f4b60d;
+    }
+    .banner__expand {
+        border-right: 1px solid #f6c53d;
+    }
+}

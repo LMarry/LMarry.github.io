@@ -1,0 +1,51 @@
+.services_background_grey {
+    background-color: #2a2d32;
+    padding-top: 45px;
+    padding-bottom: 70px;
+}
+
+.services {
+    @extend .wrap;
+}
+
+.services__title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 55px;
+}
+
+.service {
+    margin-right: 34px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    width: 260px;
+    display: inline-block;
+    cursor: pointer;
+    
+    div {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background-color: rgba(36, 140, 236, 0.9);
+        line-height: 260px;
+        font-size: 70px;
+        display: none;
+    }
+    figcaption {
+        margin-top: 30px;
+    }
+}
+
+.service:last-child {
+    margin-right: 0;
+}
+
+.service:hover {
+    div {
+        display: block;
+    }
+    figcaption {
+        color: #f4b60d;
+    }
+}

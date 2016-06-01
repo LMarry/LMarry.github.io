@@ -1,0 +1,26 @@
+@import 'reset';
+@import 'font-ubuntu-m';
+@import 'font-ubuntu-c';
+
+$font-main:    'Ubuntu Medium', sans-serif;
+$font-menu:    'Ubuntu Condensed Regular', sans-serif;
+
+.text-common{
+    font-family: $font-main;
+    line-height: 20px;
+}
+
+.wrap{
+    @extend .text-common;
+    width: 1160px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@import 'header';
+@import 'slider';
+@import 'advantages';
+@import 'services';
+@import 'news_banners';
+@import 'partners';
+@import 'footer';

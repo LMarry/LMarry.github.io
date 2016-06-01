@@ -1,0 +1,63 @@
+.advantages {
+    @extend .wrap;
+    margin-top: 72px;
+    margin-bottom: 85px;
+}
+.advantage {
+    display: inline-block;
+    width: 369px;
+    clear: both;
+    margin-right: 20px;
+}
+
+.advantage:last-child{
+    margin-right: 0px;
+}
+.advantage__number {
+    float:left;
+    margin-right: 16px;
+    font-size: 90px;
+    line-height: 65px;
+    color: rgba(42, 43, 46, 0.1);
+}
+
+.advantage__info{
+    float: right;
+    width: 250px;
+
+
+    h2{
+        font-size: 20px;
+        color: #292b2e;
+        margin: 15px 0 25px 0;
+    }
+
+    p{
+        display: inline-block;
+        font-size: 13px;
+        color: #8a8a8a;
+        margin-bottom: 15px;
+    }
+
+    a {
+        font-size: 13px;
+        color: #2a2b2e;
+        text-decoration: none;
+    }
+
+    div{
+        display: inline-block;
+        width: 10px;
+        height: 9px;
+        margin-left: 10px;
+        background: url('../img/arrow_sprite.png') left top no-repeat;
+    }
+    
+    a:hover {
+        color: #248cec;
+        
+        div{
+            background-position-y: -11px;
+        }
+    }
+}
