@@ -114,6 +114,7 @@ header {
 .menu--link:first-child {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-left: -6px;
 }
 
 .menu--link:last-child {
@@ -132,6 +133,9 @@ header {
     margin-top: 70px;
 }
 
+.menu:hover .menu--link:first-child{
+    margin-left: 0;
+}
 .menu:hover .menu--link {
     display: block;
     float: none;
@@ -256,6 +260,9 @@ main {
     background-color: rgba(54, 41, 62, 0.4);
     border-radius: 8px;
 }
+.slider__radio:checked + .slider__label:first-child:before{
+    padding-right: 1px;
+}
 
 .slider__radio:checked + .slider__label:before {
     content: "\2022";
@@ -273,8 +280,11 @@ main {
     padding-top: 70px;
     border-top: 1px solid #33253a;
     border-bottom: 1px solid #fff;
-    /*background: #765283;*/
-    background-image: -webkit-linear-gradient(to bottom, #765283, #37293e);
+    background-color: #765283;
+	background: -webkit-linear-gradient(top, #765283 5%, #37293e 60%);    
+	background:         linear-gradient(to bottom, #765283, #37293e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#765283', endColorstr='#37293e');
+	-pie-background: 	linear-gradient(to bottom, #765283, #37293e);
     height: 600px;
     box-shadow: 0 9px 20px -4px rgba(0, 0, 0, 0.3);
 }
@@ -307,7 +317,7 @@ main {
 }
 
 .post--link:hover {
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
 }
 
 .post--title,
@@ -502,6 +512,9 @@ main {
     margin-bottom: 87px;
 }
 
+.update--link:hover{
+    text-shadow: 0px 0px 10px rgba(0,0,0, 0.6);
+}
 
 /*-- БЛОК С ЛОГОТИПАМИ--*/
 
