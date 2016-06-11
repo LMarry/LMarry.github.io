@@ -2,6 +2,7 @@
 .slider {
     @extend .wrap;
     margin-top: 40px;
+    position: relative;
 }
 
 .slider-text {
@@ -35,4 +36,10 @@
 
 .slider-text:first-line {
     color: #f4b60d;
+}
+
+@media screen and (max-width: 640px) {
+    .slider{
+        display: none;
+    }
 }

@@ -15,24 +15,25 @@
 }
 
 .service {
-    margin-right: 34px;
+    width: 23.25%;
+    margin-right: 2%;
     text-align: center;
     color: #ffffff;
     font-size: 16px;
-    width: 260px;
     display: inline-block;
     cursor: pointer;
-    
     div {
+        position: relative;
+    }
+    .service_hover {
         position: absolute;
-        width: 260px;
-        height: 260px;
-        background-color: rgba(36, 140, 236, 0.9);
-        line-height: 260px;
-        font-size: 70px;
         display: none;
     }
-    figcaption {
+    img {
+        width: 100%;
+    }
+    p {
+        display: inline-block;
         margin-top: 30px;
     }
 }
@@ -42,10 +43,57 @@
 }
 
 .service:hover {
-    div {
+    .service_hover {
         display: block;
     }
-    figcaption {
+    p {
         color: #f4b60d;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .service {
+        width: 23.1%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        width: 48.6%;
+          p {
+            margin-bottom: 30px;
+        }
+    }
+    .service:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        width: 48.4%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .services {
+        text-align: center;
+    }
+    .service {
+        width: 90%;
+        margin: 0 auto;
+        p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .services {
+        width: 320px;
+    }
+    .services_background_grey {
+        padding-bottom: 45px;
     }
 }

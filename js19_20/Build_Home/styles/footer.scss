@@ -15,8 +15,8 @@
     
     ul {
         display: inline-block;
-        width: 250px;
-        margin-right: 45px;
+        width: 20.8%;
+        margin-right: 5%;
         
         p{
             font-size: 16px;
@@ -32,7 +32,7 @@
     
     li {
         display: block;
-        width: 260px;
+        width: 100%;
         border-bottom: 1px solid #393c40;
     }
     
@@ -78,5 +78,24 @@
     .copyright{
         float: right;
         margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-menu_background_grey{
+        display: none;
+    }
+    
+    .footer-info{
+        width: 325px;
+        text-align: center;
+        margin: 0 auto;
+        div{
+            display: block;
+            margin-right: 0;
+        }
+        .copyright{
+            float: none;
+        }
     }
 }

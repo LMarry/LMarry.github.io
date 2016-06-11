@@ -3,6 +3,18 @@ $(function () {
 
     });
     
+    $(window).resize(function(){
+        if($(this).width() <= 1160){
+            
+        
+        $('.jcarousel').css({'width': $(this).width()});
+        $('.jcarousel li').css({'width': $(this).width()});
+    }
+        else{
+            $('.jcarousel').css({'width': '1160px'});
+        $('.jcarousel li').css({'width': '1160px'});
+        }
+    })
     $('.jcarousel-pagination').jcarouselPagination({
         item: function (page) {
             return '<a href="#' + page + '">' + page + '</a>';

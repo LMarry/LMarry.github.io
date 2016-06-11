@@ -3,61 +3,112 @@
     margin-top: 72px;
     margin-bottom: 85px;
 }
+
 .advantage {
     display: inline-block;
-    width: 369px;
+    width: 33%;
     clear: both;
-    margin-right: 20px;
+    position: relative;
 }
 
-.advantage:last-child{
-    margin-right: 0px;
+.advantage:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
+
+.advantage:last-child {}
+
 .advantage__number {
-    float:left;
-    margin-right: 16px;
+    float: left;
     font-size: 90px;
     line-height: 65px;
     color: rgba(42, 43, 46, 0.1);
 }
 
-.advantage__info{
+.advantage__info {
     float: right;
-    width: 250px;
-
-
-    h2{
+    width: 67%;
+    h2 {
         font-size: 20px;
         color: #292b2e;
         margin: 15px 0 25px 0;
     }
-
-    p{
+    p {
         display: inline-block;
         font-size: 13px;
         color: #8a8a8a;
         margin-bottom: 15px;
+        height: 55px;
+        overflow: hidden;
     }
-
     a {
         font-size: 13px;
         color: #2a2b2e;
         text-decoration: none;
     }
-
-    div{
+    div {
         display: inline-block;
         width: 10px;
         height: 9px;
         margin-left: 10px;
         background: url('../img/arrow_sprite.png') left top no-repeat;
     }
-    
     a:hover {
         color: #248cec;
-        
-        div{
+        div {
             background-position-y: -11px;
         }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .advantage {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .advantage__info {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .advantage {
+        width: 100%;
+    }
+    .advantage__info {
+        width: 70%;
+        h2 {
+            margin: 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .advantages {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .advantage {
+        width: 100%;
+    }
+    .advantage__info {
+        width: 65%;
+        p {
+            display: none;
+        }
+        h2 {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .advantage {
+        width: 320px;
     }
 }
