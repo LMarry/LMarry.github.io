@@ -121,8 +121,20 @@ table {
   background: url(../img/social_sprite.png) left top no-repeat;
   background-position: -93px -23px; }
 
-.header-links__item:hover, .header-links__item_facebook:hover, .header-links__item_twitter:hover, .header-links__item_rss:hover, .header-links__item_linkedin:hover, .header-links__item_skype:hover {
-  background-position-y: 0; }
+.header-links__item_facebook:hover {
+  background-position: 5px 0px; }
+
+.header-links__item_twitter:hover {
+  background-position: -20px 0px; }
+
+.header-links__item_rss:hover {
+  background-position: -45px 0px; }
+
+.header-links__item_linkedin:hover {
+  background-position: -70px 0px; }
+
+.header-links__item_skype:hover {
+  background-position: -93px 0px; }
 
 .menu {
   clear: both;
