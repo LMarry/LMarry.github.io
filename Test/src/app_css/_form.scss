@@ -1,0 +1,15 @@
+form{
+    float: left;
+    .form-group{
+        display: block;
+    }
+    .btn{
+        margin: auto;
+        width: 196px;
+        font-weight: bold;
+    }
+    
+    .btn:hover{
+        color: deepskyblue;
+    }
+}

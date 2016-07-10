@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="colorTableApp" ng-strict-di>
+<head>
+<title>Hex code table</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href='build/css/vendor.css'>
+<link rel="stylesheet" href='build/css/app.css'>
+<script src='build/js/vendor_js.min.js'></script>
+<script src='build/js/app_js.min.js'></script>
+
+</head>
+<body >
+    <div class="page-title">
+        <h1> Hex Color Code </h1>
+    </div>
+    <div class="panel" ng-controller="dataController">
+        <form ng-controller="colorTableController" name = "addColorForm">
+            <div class="form-group">
+                <input class="form-control" ng-model="color" placeholder = "Color name" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" ng-model="code" ng-pattern="/^[a-fA-F0-9]{1,6}$/" placeholder="Hex code" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default" ng-click="addItem(color, code, addColorForm)">Add</button>
+            </div>
+        </form>
+    <table class="my-table-style table table-bordered" >
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Color name</th>
+                    <th>Hex</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in list.colorsArray">
+                   <td>{{$index +1}}</td>
+                    <td>{{item.colorName}}</td>
+                    <td style="background: {{item.hexValue}};">{{item.hexValue}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
+
+
