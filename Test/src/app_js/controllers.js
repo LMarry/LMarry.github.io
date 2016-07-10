@@ -17,6 +17,8 @@ colorTableApp.controller('dataController',  [ '$scope', '$http',
             }
             code = '#'+code;
             $scope.list.colorsArray.push({ colorName: color, hexValue: code});
+            $scope.code = null;
+            $scope.color = null;
             return;
         }
         alert('Hex field must contain only symbols a-f (A-F) and numbers without #');
